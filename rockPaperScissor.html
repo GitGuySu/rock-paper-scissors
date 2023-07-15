@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./function.js"></script>
+    <script src="./function.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script>
-        let permission = confirm("Shall we start the game?");
-        if(permission)
-            game();
+        // let permission = confirm("Shall we start the game?");
+        // if(permission)
+        //     game();
+        
         
     </script>
+    <h1 id="main-heading">WELCOME TO ROCK PAPER SCISSOR GAME</h1>
+    <h2 class="subheading">Make your choice</h2>
+    <p class="para">The rules of the game is simple. You need to choose your option. The computer will also choose its option. Based on the rules we decide who is the winner</p>
+    <button class="btn" id="rock">Rock</button>
+    <button class="btn" id="paper">Paper</button>
+    <button class="btn" id="scissor">Scissor</button>
+    <br>
+    <div id="container"></div>
 </body>
 </html>
